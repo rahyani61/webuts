@@ -1,0 +1,281 @@
+/* ================================
+   EduTalent - style1.css
+   CSS Landing Page
+   ================================ */
+/* Scroll halus saat klik navigasi */
+html {
+  scroll-behavior: smooth;
+}
+/* Menghapus jarak bawaan browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font seluruh halaman */
+body {
+  font-family: sans-serif;
+}
+
+/* ======= NAVBAR ======= */
+
+/* Background biru navbar */
+.navbar {
+  background-color: #2563eb;
+  padding: 16px 2rem;
+}
+
+/* Isi navbar sejajar kiri kanan */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* logo kiri menu kanan */
+  align-items: center;
+}
+
+/* Styling logo */
+.logo {
+  color: white;
+  font-size: 22px;
+}
+
+/* Styling link menu */
+nav a {
+  color: white;
+  text-decoration: none; /* hilangkan garis bawah */
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+/* Efek hover menu */
+nav a:hover {
+  color: #fbbf24; /* kuning */
+}
+
+/* ======= HERO ======= */
+
+/* Background hero biru muda */
+.hero {
+  background-color: #eff6ff;
+  padding: 60px 2rem;
+}
+
+/* Teks kiri dan gambar kanan sejajar */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+/* Teks ambil separuh ruang */
+.hero-teks {
+  flex: 1;
+}
+
+/* Judul hero */
+.hero-teks h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 40px;
+}
+
+/* Paragraf hero */
+.hero-teks p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Tombol hero */
+.hero-teks button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Efek hover tombol */
+.hero-teks button:hover {
+  background-color: burlywood;
+}
+
+/* Gambar ambil separuh ruang */
+.hero-gambar {
+  flex: 1;
+}
+
+/* Gambar penuh dan melengkung */
+.hero-gambar img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ======= TENTANG ======= */
+
+/* Background putih */
+.tentang {
+  background-color: #ffffff;
+  padding: 60px 2rem;
+}
+
+/* Tengahkan isi */
+.tentang-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Judul tentang */
+.tentang-container h2 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+/* Paragraf tentang */
+.tentang-container p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ======= KURSUS ======= */
+
+/* Background abu muda */
+.kursus {
+  background-color: #f8fafc;
+  padding: 60px 2rem;
+}
+
+/* Tengahkan isi */
+.kursus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Judul kursus */
+.kursus-container h2 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* Subjudul kursus */
+.kursus-container > p {
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* 3 kotak sejajar */
+.kursus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom sama rata */
+  gap: 24px;
+}
+
+/* Tiap kotak kursus */
+.kursus-card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+/* Gambar di dalam card */
+.kursus-card img {
+  width: 100%;          /* lebar penuh */
+  height: 160px;
+  object-fit: cover;    /* tidak gepeng */
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Link di dalam card */
+.kursus-card a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Judul card */
+.kursus-card h3 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+/* Paragraf card */
+.kursus-card p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* ======= KONTAK ======= */
+
+/* Background biru gelap */
+.kontak {
+  background-color: #1e40af;
+  padding: 60px 2rem;
+}
+
+/* Tengahkan isi */
+.kontak-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Judul kontak putih */
+.kontak-container h2 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Paragraf kontak */
+.kontak-container p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.8); /* putih transparan */
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+/* ======= FOOTER ======= */
+
+/* Background hitam kebiruan */
+.footer {
+  background-color: #1e293b;
+  padding: 24px 2rem;
+}
+
+/* Tengahkan isi footer */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Tulisan copyright */
+.footer-container p {
+  color: rgba(255,255,255,0.5); /* putih transparan */
+  font-size: 13px;
+}

@@ -1,0 +1,214 @@
+/* Reset */
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* background gambar + warna gelap di atasnya */
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  background-image: url('../bacground_login.jpg');
+   background-size: cover;     /* gambar memenuhi layar */
+  background-position: center; /* gambar di tengah */
+}
+
+/* ===== LOGIN ===== */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-box {
+  margin-top: 120px;
+  flex-basis: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px; /* sudut melengkung */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2); /* bayangan */
+}
+
+.login-box h2 {
+  
+  color: #2563eb;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 0 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* input melengkung */
+}
+
+input[type=submit] {
+  background: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  background:#2563eb;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: white; /* putih */
+  color: #2563eb;    /* tulisan biru */
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #2563eb;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  display: flex;
+}
+
+aside {
+  flex: 20%;
+  background: #1e40af; /* biru gelap */
+}
+
+section.main {
+  flex: 80%;
+  background: #f8fafc;
+  min-height: 530px;
+  padding: 20px;
+}
+
+footer {
+  background: #1e40af;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* ===== MENU ===== */
+.menu { padding: 0; }
+
+.menu li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 16px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: #2563eb;
+  padding-left: 28px; /* geser kanan saat hover */
+}
+
+/* ===== TABEL ===== */
+.judul {
+  color: #2563eb;
+  padding-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #e2e8f0;
+  padding: 14px;
+}
+
+.table th {
+  background: #2563eb;
+  color: white; /* header tabel biru */
+}
+
+.table tr:hover {
+  background: #eff6ff; /* baris berubah saat hover */
+}
+
+/* ===== TOMBOL ===== */
+.tombol {
+  display: inline-block;
+  padding: 10px 24px;
+  color: white;
+  text-decoration: none;
+  background: #2563eb;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+}
+
+.tombol.edit { background: #16a34a; } /* hijau */
+.tombol.hapus { background: #fc4c4c; } /* merah */
+.tombol.edit, .tombol.hapus {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* ===== FORM ===== */
+.form-group { clear: both; margin-bottom: 8px; }
+
+.form-group label {
+  display: block;
+  padding: 12px 0;
+  float: left;
+  width: 30%;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.form-group .input {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+input[type=radio] { width: 50px; }
+
+.tombol.simpan { background: #2563eb; }
+.tombol.reset { background: #fb8307; }
+
+
+@media (max-width: 700px) {
+  .container { flex-direction: column; }
+  .form-group label, .form-group .input { width: 100%; }
+}
+
+/* ===== DASHBOARD ===== */
+
+/* Wadah 3 kotak statistik */
+.statistik {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Tiap kotak statistik */
+.stat-box {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+
+/* Angka besar */
+.stat-box h2 { font-size: 2rem; }
+
+/* Tulisan kecil bawah */
+.stat-box p  { font-size: 14px; }
+
+/* Warna tiap kotak */
+.biru   { background: #2563eb; } /* biru */
+.hijau  { background: #16a34a; } /* hijau */
+.kuning { background: #f59e0b; } /* kuning */
